@@ -31,7 +31,7 @@ export const CreatePostForm = styled(AppForm)`
 
 export const SubmitPost = styled(AppButton)`
   align-self: center;
-  background-color: rgba(160, 160, 160, 0.1);
+  background-color: rgba(160, 160, 160, 0.2);
   width: unset;
   margin-top: 16px;
   padding: 10px 64px;

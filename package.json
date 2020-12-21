@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "normal" : "node app.js",
     "start": "nodemon app.js",
     "debugg": "nodemon --inspect app.js",
     "server": "nodemon app.js",

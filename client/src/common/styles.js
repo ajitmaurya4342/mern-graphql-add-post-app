@@ -90,7 +90,9 @@ export const Wave = styled.div`
 export const AppBodyWrapper = styled.div`
   width: 100%;
   position: absolute;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: relative;
 `;
 
 export const Layout = styled.div`

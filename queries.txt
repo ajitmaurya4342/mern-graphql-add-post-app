@@ -1,0 +1,10 @@
+
+    npm i @apollo/react-hooks apollo-cache-inmemory apollo-client apollo-link-context apollo-link-http graphql graphql-tag jwt-decode moment
+    
+    
+    
+    
+    
+    
+    
+    

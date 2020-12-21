@@ -7,14 +7,15 @@ import {
 } from "./styles";
 import { v4 as uuidv4 } from "uuid";
 
-const PostItem = () => {
+const PostItem = ({ data }) => {
+  console.log("data :>> ", data);
   return (
     <PostItemContainer>
       <UserContainer>
         <UserContentWrapper>
           <div>
-            <label id="username">This is Post Item</label>
-            <label id="time">some times ago</label>
+            <label id="username">{data?.username}</label>
+            <label id="time">{data?.createdAt}</label>
           </div>
           <UserProfileImage
             src={`https://icotar.com/avatar/${uuidv4()}?s=200`}
@@ -22,7 +23,7 @@ const PostItem = () => {
           />
         </UserContentWrapper>
         <div id="divider"></div>
-        <label id="post-body">This is Post Item</label>
+        <label id="post-body">{data?.body}</label>
       </UserContainer>
     </PostItemContainer>
   );

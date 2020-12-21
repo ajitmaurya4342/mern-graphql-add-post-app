@@ -13,17 +13,16 @@ import Header from "./common/header";
 import PostList from "./pages/posts-list";
 import { Layout, AppBodyWrapper } from "./common/styles";
 
-const AllRoutes = (props) => {
+const AllRoutes = () => {
   return (
     <AppBodyWrapper>
       <Header />
       <Layout>
         <Switch>
-          {/* <Route exact path={HOME_ROUTE} component={Home} /> */}
+          <Route exact path={HOME_ROUTE} component={Home} />
           <Route exact path={LOGIN_ROUTE} component={Login} />
           <Route exact path={REGISTER_ROUTE} component={Register} />
-          <Route exact path={HOME_ROUTE} component={PostList} />
-
+          <Route exact path={"/post-list"} component={PostList} />
           {/* <Route component={PageNotFound} /> */}
         </Switch>
       </Layout>
